@@ -1,0 +1,55 @@
+{"_id":"1PuClXnxMuzCvIPF","name":"Atributos 2","type":"Item","sort":750000,"flags":{},"parent":"z8Eyre4U4MZtlWW8","color":""}
+{"_id":"3CCFGF8mK7yW4r3q","name":"Dominate","type":"Item","sort":400000,"flags":{},"parent":"uP4F5Lh8gGypvRMa","color":"#790914"}
+{"_id":"5ANKXrrSrrL5PEEE","name":"Blood Sorcery","type":"Item","sort":1000000,"flags":{},"parent":"uP4F5Lh8gGypvRMa","color":"#790914"}
+{"_id":"5C11bp0t16JRVD8i","name":"Flaws (Haven)","type":"Item","sort":3400000,"flags":{},"parent":"hIIuRiZ8RoHgZVIy","color":"#514f51"}
+{"_id":"5pVTBh20S2fFVQWH","name":"Rituales","type":"Item","sort":1100000,"flags":{},"parent":"uP4F5Lh8gGypvRMa","color":"#790914"}
+{"name":"Atributos","type":"Item","sort":700000,"flags":{},"parent":"z8Eyre4U4MZtlWW8","color":"","_id":"8kQwwQmQPa9DFhTc"}
+{"_id":"8rfuk4t811Refkom","name":"Merits (Haven)","type":"Item","sort":3300000,"flags":{},"parent":"hIIuRiZ8RoHgZVIy","color":"#1f23b8"}
+{"_id":"AWuIw7SPmPZqpKeQ","name":"Principal","type":"Item","sort":0,"flags":{},"parent":"oIHIZg9nMSQzHKDe","color":""}
+{"name":"Group Properties","type":"Item","sort":1700000,"flags":{},"parent":"NgzkG6AZTNlHcGrm","color":"","_id":"Aok1hPFFys6L1Tj8"}
+{"_id":"BSVThEgEXCoDIWxB","name":"Thin Blood Merits","type":"Item","sort":3000000,"flags":{},"parent":"hIIuRiZ8RoHgZVIy","color":"#1f23b8"}
+{"name":"Info","type":"Item","sort":600000,"flags":{},"parent":"z8Eyre4U4MZtlWW8","color":"","_id":"CX9BsmKGAvg6mnBu"}
+{"_id":"D952GljE7LSD2JVg","name":"Predator","type":"Item","sort":100000,"flags":{},"parent":"RJNDPBbMkbSn1QOf","color":""}
+{"_id":"DayAV0i9enn0OOzN","name":"_COMPENDIUM","type":"Item","sort":200000,"flags":{},"parent":null,"color":""}
+{"_id":"EHJy3LTt15q7OAiQ","name":"Thin Blood Alchemy","type":"Item","sort":1200000,"flags":{},"parent":"uP4F5Lh8gGypvRMa","color":"#790914"}
+{"_id":"ESSZWNThCPTRlHMq","name":"Disciplinas2","type":"Item","sort":200000,"flags":{},"parent":"oIHIZg9nMSQzHKDe","color":""}
+{"_id":"EmGobyGcxYTRjJTX","name":"Disciplinas","type":"Item","sort":100000,"flags":{},"parent":"oIHIZg9nMSQzHKDe","color":""}
+{"name":"Coterie","type":"Item","sort":3600000,"flags":{},"parent":"oIHIZg9nMSQzHKDe","color":"","_id":"FrsYF95hn6YD8MZo"}
+{"_id":"H9rI7EmwfxHBL8ty","name":"Backgrounds (Flaws)","type":"Item","sort":200000,"flags":{},"parent":"hIIuRiZ8RoHgZVIy","color":"#514f51"}
+{"_id":"IaZDHBnYdn9CkFp9","name":"Potence","type":"Item","sort":700000,"flags":{},"parent":"uP4F5Lh8gGypvRMa","color":"#790914"}
+{"name":"Otros","type":"Item","sort":1100000,"flags":{},"parent":"z8Eyre4U4MZtlWW8","color":"","_id":"IoqcW1J8eyYjeLBv"}
+{"_id":"J0Vec64gFklKi6ZM","name":"_TEMPLATES","type":"Item","sort":100000,"flags":{},"parent":null,"color":""}
+{"name":"Tablas","type":"Item","sort":1200000,"flags":{},"parent":"z8Eyre4U4MZtlWW8","color":"","_id":"KQk7bTa3OXm4kDrd"}
+{"name":"Habilidades","type":"Item","sort":900000,"flags":{},"parent":"z8Eyre4U4MZtlWW8","color":"","_id":"KnF9r98ccc8kUZCT"}
+{"_id":"L0HphXsLrPJ4gI1t","name":"Celerity","type":"Item","sort":300000,"flags":{},"parent":"uP4F5Lh8gGypvRMa","color":"#790914"}
+{"_id":"NgzkG6AZTNlHcGrm","name":"_CONFIG","type":"Item","sort":100000,"flags":{},"parent":"DayAV0i9enn0OOzN","color":""}
+{"name":"Tiradas","type":"Item","sort":800000,"flags":{},"parent":"z8Eyre4U4MZtlWW8","color":"","_id":"Q0l7co921oBW3NON"}
+{"_id":"QlKknpgrZSjM37YU","name":"Backgrounds","type":"Item","sort":100000,"flags":{},"parent":"hIIuRiZ8RoHgZVIy","color":"#1f23b8"}
+{"_id":"QtZ8NRrCPHLnqQ9X","name":"Fortitude","type":"Item","sort":500000,"flags":{},"parent":"uP4F5Lh8gGypvRMa","color":"#790914"}
+{"_id":"RCywZlCSzdCFvyAc","name":"Mythic Merits","type":"Item","sort":2800000,"flags":{},"parent":"hIIuRiZ8RoHgZVIy","color":"#1f23b8"}
+{"_id":"RJNDPBbMkbSn1QOf","name":"_cITEMS","type":"Item","sort":150000,"flags":{},"parent":"DayAV0i9enn0OOzN","color":"#400080"}
+{"name":"Coterie","type":"Item","sort":3700000,"flags":{},"parent":"z8Eyre4U4MZtlWW8","color":"","_id":"V1Apx40HaWM0J8d8"}
+{"_id":"b7hEW9jhKuoEbuRd","name":"Labels","type":"Item","sort":2500000,"flags":{},"parent":"z8Eyre4U4MZtlWW8","color":""}
+{"_id":"bJ4KxFNYTb9cS7p9","name":"Presence","type":"Item","sort":800000,"flags":{},"parent":"uP4F5Lh8gGypvRMa","color":"#790914"}
+{"_id":"biH19MxljYNX9iZW","name":"_TABS","type":"Item","sort":300000,"flags":{},"parent":"J0Vec64gFklKi6ZM","color":""}
+{"_id":"ekP47Ykp5DN9YMAM","name":"Protean","type":"Item","sort":900000,"flags":{},"parent":"uP4F5Lh8gGypvRMa","color":"#790914"}
+{"_id":"h0apysKQztsZM1Fx","name":"Oblivion","type":"Item","sort":650000,"flags":{},"parent":"uP4F5Lh8gGypvRMa","color":"#790914"}
+{"_id":"hIIuRiZ8RoHgZVIy","name":"Advantages and Flaws","type":"Item","sort":400000,"flags":{},"parent":"DayAV0i9enn0OOzN","color":"#6c0183"}
+{"_id":"iiZ31cN0NIUQUbiW","name":"Merits","type":"Item","sort":300000,"flags":{},"parent":"hIIuRiZ8RoHgZVIy","color":"#1f23b8"}
+{"_id":"k0H4ArVkzUxqQM6t","name":"_CONFIG","type":"Actor","sort":100000,"flags":{},"parent":null,"color":""}
+{"_id":"kDr4dK0w60oNtr6j","name":"Clans","type":"Item","sort":200000,"flags":{},"parent":"RJNDPBbMkbSn1QOf","color":""}
+{"_id":"lnEl3UQWO4TcGWBs","name":"Crónica","type":"Item","sort":400000,"flags":{},"parent":"oIHIZg9nMSQzHKDe","color":""}
+{"_id":"oIHIZg9nMSQzHKDe","name":"_PANELS","type":"Item","sort":100000,"flags":{},"parent":"J0Vec64gFklKi6ZM","color":""}
+{"_id":"okOPOLk8Dcql0wnw","name":"Obfuscate","type":"Item","sort":600000,"flags":{},"parent":"uP4F5Lh8gGypvRMa","color":"#790914"}
+{"name":"Ocultas","type":"Item","sort":3200000,"flags":{},"parent":"z8Eyre4U4MZtlWW8","color":"","_id":"tF1LV2rcw1fqNpPS"}
+{"name":"Groups","type":"Item","sort":1600000,"flags":{},"parent":"NgzkG6AZTNlHcGrm","color":"","_id":"tepqmGDz3gpzAC3z"}
+{"_id":"u6bVP5tgT5NzBt6H","name":"Flaws","type":"Item","sort":400000,"flags":{},"parent":"hIIuRiZ8RoHgZVIy","color":"#514f51"}
+{"_id":"uP4F5Lh8gGypvRMa","name":"DISCIPLINES","type":"Item","sort":200000,"flags":{},"parent":"DayAV0i9enn0OOzN","color":"#790914"}
+{"name":"Coterie","type":"Item","sort":3500000,"flags":{},"parent":"biH19MxljYNX9iZW","color":"","_id":"uwsEwcSRozT4btgk"}
+{"_id":"v8qVm5HGQMJTzxPB","name":"Disciplinas","type":"Item","sort":950000,"flags":{},"parent":"z8Eyre4U4MZtlWW8","color":""}
+{"_id":"vOGEdDWS7TVZGQlF","name":"Animalism","type":"Item","sort":100000,"flags":{},"parent":"uP4F5Lh8gGypvRMa","color":"#790914"}
+{"_id":"vX9oCxu5kLybT69Y","name":"Disciplinas2","type":"Item","sort":1025000,"flags":{},"parent":"z8Eyre4U4MZtlWW8","color":""}
+{"_id":"w2bJ5ZARuBMIC7Fa","name":"Mythic Flaws","type":"Item","sort":2900000,"flags":{},"parent":"hIIuRiZ8RoHgZVIy","color":"#514f51"}
+{"_id":"wyFMhZy6b2uUBazX","name":"Auspex","type":"Item","sort":200000,"flags":{},"parent":"uP4F5Lh8gGypvRMa","color":"#790914"}
+{"_id":"yyS6hbtvwYdtrN4i","name":"Thin Blood Flaws","type":"Item","sort":3100000,"flags":{},"parent":"hIIuRiZ8RoHgZVIy","color":"#514f51"}
+{"_id":"z8Eyre4U4MZtlWW8","name":"_PROPERTIES","type":"Item","sort":200000,"flags":{},"parent":"J0Vec64gFklKi6ZM","color":""}

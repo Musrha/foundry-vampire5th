@@ -1,0 +1,162 @@
+<form class="{{cssClass}}" autocomplete="off" id="sheet">
+    {{!-- Sheet Header --}}
+    <header class="sheet-header">
+        <img class="profile-img" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" height="100" width="100">
+        <div class="header-fields">
+            <h1 class="charname"><input name="name" type="text" value="{{actor.name}}" placeholder="Name"></h1>
+            <div class="flexblock-left ">
+                <div class="col-1-2">
+                    {{#if actor.data.istemplate}}
+                    {{else}}
+                    <div class="flexblock-left">
+                        <label class="label-free boldtext">MOD</label>
+                        <input class="input-min" type="text" name="data.mod" value="{{data.mod}}">
+
+                        {{#advShow}}
+                        <a class="roll-mode boldtext" title="Roll mode"><i>{{data.rollmode}}</i></a>
+                        {{/advShow}}
+
+                        {{#showRoller}}
+                        <a class="roll-free" title="Roll mode"><i class="fas fa-dice-d20"></i></a>
+                        {{/showRoller}}
+
+                        {{#if actor.data.selector}}
+                        <a class="mod-selector" title="Select Options"><i class="fas fa-exclamation-circle fa-2x"></i></a>
+                        {{/if}}
+                    </div>
+                    {{/if}}
+                </div>
+
+                <div class="rightblock">
+                    {{#if actor.data.istemplate}}
+                    {{else}}
+                    {{#isGM}}
+                    <select class="selectsheet" name="data.gtemplate" data-type="String">
+                        <!--
+{{#select actor.data.gtemplate}}
+{{#each data.sheets as |gtemplate id|}}
+<option  value="{{gtemplate}}">{{gtemplate}}</option>
+{{/each}}
+{{/select}}
+-->
+                    </select>
+                    {{/isGM}}
+                    {{/if}}
+                    {{#isGM}}
+
+
+                    <h3 class="rightblock-element">Template</h3>
+                    <input class="check-istemplate" name="data.istemplate" id="check-istemplate" type="checkbox" {{checked actor.data.istemplate}}="">
+
+
+                    {{/isGM}}
+
+                    {{#if actor.data.istemplate}}
+                    <h3 class="rightblock-element-tag">Rebuild Sheet</h3>
+                    <a class="rightblock-element item-refresh" title="Rebuild Sheet"><i class="fas fa-sync"></i></a>
+                    {{/if}}
+                </div>
+            </div>
+        </div>
+    </header>
+
+    {{!-- Sheet Tab Navigation --}}
+    <div class="atabs">
+        <a class="tab-prev" id="tab-prev">❮</a>
+        <nav class="sheet-tabs tabs" data-group="primary" id="tabs" tabs="2">
+
+            <a class="item tab-button" data-tab="description" id="tab-0">Bio</a>          
+            <a class="item tab-button" id="tab-1" data-tab="principalcoterie_tab">Principal</a><a class="item tab-button" id="tab-2" data-tab="refugiodominio_tab">Haven/Domain</a><a style="display: none" id="tab-last"></a>
+            {{#isGM}}
+            <a class="item tab-button" data-tab="citems" id="tab-citems">cItems</a>
+            {{#if actor.data.istemplate}}
+            <a class="item tab-button" data-tab="token" id="tab-token">Token</a>
+            <a class="item tab-button" data-tab="config" id="tab-tabs">Tabs</a>
+            {{/if}}
+            {{/isGM}}
+
+        </nav>
+        <a class="tab-next" id="tab-next">❯</a>
+    </div>
+
+    {{!-- Sheet Body --}}
+    <section class="sheet-body" id="sheet-body">
+
+        {{!-- Biography Tab --}}
+        <div class="tab biography active scrollable" data-group="primary" data-tab="description">
+            {{editor content=data.biography target="data.biography" button=true owner=owner editable=editable}}
+        </div>
+
+        {{#if actor.data.istemplate}}
+        {{!-- SheetTabs Tab --}}
+        <div class="tab properties" data-group="primary" data-tab="config">
+            <ol class="properties-list">
+                {{#each data.tabs as |tab id|}}
+                <li class="property flexrow" data-item-id="{{id}}">
+                    <h4 class="property-name">{{tab.name}}</h4>
+                    <div class="property-row">
+                        <a class="property-controls item-top" title="Top Item"><i class="fas fa-arrow-alt-circle-up"></i></a>
+                        <a class="property-controls item-bottom" title="Bottom Item"><i class="fas fa-arrow-alt-circle-down"></i></a>
+                        <a class="property-control item-edit" title="Edit Tab"><i class="fas fa-edit"></i></a>
+                        <a class="property-control item-delete" title="Delete Tab"><i class="fas fa-trash"></i></a>
+                    </div>
+                </li>
+                {{/each}}
+            </ol>
+        </div>
+        {{!-- Token Tab --}}
+        <div class="tab token scrollable" data-group="primary" data-tab="token">
+            <div class="flexblock">
+                <div class="col-1-2">
+                    <div class="new-row">
+                        <div class="flexblock-left">
+                            <label class="label-medlarge">Bar 1</label>
+                            <input class="token-bar1" type="text" name="data.tokenbar1" value="{{data.tokenbar1}}" tkvalue="">
+                        </div>
+                    </div>
+                    <div class="new-row">
+                        <div class="flexblock-left">
+                            <label class="label-medlarge">Shield Stat</label>
+                            <input class="token-shieldstat" type="text" name="data.shieldstat" value="{{data.shieldstat}}" tkvalue="">
+                        </div>
+                    </div>
+                    <div class="new-row">
+                        <div class="flexblock-left">
+                            <label class="label-medlarge">Display Name</label>
+                            <select class="token-displayName" name="data.displayName" data-type="String" tkvalue="">
+                                {{#select actor.data.displayName}}
+                                <option value="NONE">NONE</option>
+                                <option value="CONTROL">CONTROL</option>
+                                <option value="OWNER_HOVER">OWNER HOVER</option>
+                                <option value="HOVER">HOVER</option>
+                                <option value="OWNER">OWNER</option>
+                                <option value="ALWAYS">ALWAYS</option>
+                                {{/select}}
+                            </select>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        {{/if}}
+
+        {{!-- cItems Tab --}}
+        <div class="tab citems scrollable" data-group="primary" data-tab="citems">
+            <ol class="properties-list">
+                {{#each data.citems as |citem cid|}}
+                <li class="property flexrow" data-item-id="{{cid}}">
+                    <h4 class="property-name">{{citem.name}}</h4>
+                    <div class="property-row">
+                        <a class="property-control citem-edit" title="Edit cItem"><i class="fas fa-edit"></i></a>
+                        <a class="property-control citem-delete" citemid="{{citem.id}}" title="Delete cItem"><i class="fas fa-trash"></i></a>
+                    </div>
+                </li>
+                {{/each}}
+            </ol>
+        </div>
+
+
+
+    <div class="tab scrollable principalcoterie_tab_tab" id="principalcoterie_tab_Def" data-group="primary" data-tab="principalcoterie_tab"><div class="new-column" id="principalcoterie_tabBody"><div class="new-block" id="principalcoterie_tabrow0"><div class="col-1-1"><div class="new-row"><div class="flexblock-center"><h3 class="centertext label-med" id="name" attid="BYYAdaLq9GubIhID">Name:</h3><input name="data.attributes.name.value" value="{{data.attributes.name.value}}" type="text" class="input-med name" attid="BYYAdaLq9GubIhID"><h3 class="centertext label-med" id="tipocoterie" attid="qg1NdAyCVdAfFT9i">Type:</h3><input name="data.attributes.tipocoterie.value" value="{{data.attributes.tipocoterie.value}}" type="text" class="input-med tipocoterie" attid="qg1NdAyCVdAfFT9i"></div></div></div></div><div class="new-block" id="principalcoterie_tabrow1"><div class="col-1-2"><div class="panelheader-t">Objectives</div><div class="new-row"><div class="flexblock-center"><textarea class="texteditor-med objetivoscoterie" name="data.attributes.objetivoscoterie.value" attid="V31zwXL68U4xlQ4p">{{data.attributes.objetivoscoterie.value}}</textarea></div></div></div><div class="col-1-2"><div class="panelheader-t">Members</div><div class="new-row"><div class="flexblock-center"><textarea class="texteditor-med miembroscoterie" name="data.attributes.miembroscoterie.value" attid="1hi5TkBQCSdYYznT">{{data.attributes.miembroscoterie.value}}</textarea></div></div></div></div><div class="new-block" id="principalcoterie_tabrow2"><div class="col-1-1"><div class="panelheader-t">Additional Info</div><div class="new-row"><div class="flexblock-center"><textarea class="texteditor-med infoadicional" name="data.attributes.infoadicional.value" attid="DNtzXwCdeFxsDxgF">{{data.attributes.infoadicional.value}}</textarea></div></div></div></div></div></div><div class="tab scrollable refugiodominio_tab_tab" id="refugiodominio_tab_Def" data-group="primary" data-tab="refugiodominio_tab"><div class="new-column" id="refugiodominio_tabBody"><div class="new-block" id="refugiodominio_tabrow2"><div class="col-1-1"><div class="panelheader-t">Haven</div></div></div><div class="new-block" id="refugiodominio_tabrow3"><div class="col-1-3"><div class="panelheader">Backgrounds</div><div class="table-row"><div class="flexblock-left"><table class="table-free trasfondos_tabla" name="data.attributes.trasfondos_tabla" value="{{data.attributes.trasfondos_tabla.value}}" attid="yofFXznUPGmY2VsG"><thead><tr><th class="label-large">Item</th><th class="input-min">Score</th><th class="cell-empty"></th></tr></thead><tbody class="table" id="yofFXznUPGmY2VsG"></tbody></table></div></div></div><div class="col-1-3"><div class="panelheader">Merits</div><div class="new-row"><div class="flexblock-left"><table class="table-free meritos_tabla" name="data.attributes.meritos_tabla" value="{{data.attributes.meritos_tabla.value}}" attid="nql8oSqbbKvsOBoo"><thead><tr><th class="label-large">Item</th><th class="input-min">Score</th><th class="cell-empty"></th></tr></thead><tbody class="table" id="nql8oSqbbKvsOBoo"></tbody></table></div><div class="flexblock-left"><h3 class=" label-free" id="haven" attid="Q0bic8MVI6A1HRY4" style="display: none;"></h3><input name="data.attributes.haven.value" value="{{data.attributes.haven.value}}" type="text" class="input-min haven" attid="Q0bic8MVI6A1HRY4" style="display: none;"></div></div></div><div class="col-1-3"><div class="panelheader">Flaws</div><div class="new-row"><div class="flexblock-left"><table class="table-free defectos_tabla" name="data.attributes.defectos_tabla" value="{{data.attributes.defectos_tabla.value}}" attid="3Si7b7FEZkgmYKUH"><thead><tr><th class="label-large">Item</th><th class="input-min">Score</th><th class="cell-empty"></th></tr></thead><tbody class="table" id="3Si7b7FEZkgmYKUH"></tbody></table></div><div class="flexblock-left"><h3 class=" label-free" id="havenflaw" attid="XHIoXa6Pmm6sHvUb" style="display: none;"></h3><input name="data.attributes.havenflaw.value" value="{{data.attributes.havenflaw.value}}" type="text" class="input-min havenflaw" attid="XHIoXa6Pmm6sHvUb" style="display: none;"></div></div></div></div><div class="new-block" id="refugiodominio_tabrow4"><div class="col-1-2">{{#ifGreater actor.data.attributes.refugio.value '0'}}<div class="panelheader">Haven Merits</div><div class="table-row"><div class="flexblock-left"><table class="table-free meritosrefugio_tabla" name="data.attributes.meritosrefugio_tabla" value="{{data.attributes.meritosrefugio_tabla.value}}" attid="ONak7jG5K0jWp8wb"><thead><tr><th class="label-large">Item</th><th class="input-min">Score</th><th class="cell-empty"></th></tr></thead><tbody class="table" id="ONak7jG5K0jWp8wb"></tbody></table></div></div>{{/ifGreater}}</div><div class="col-1-2">{{#ifGreater actor.data.attributes.defrefugio.value '0'}}<div class="panelheader">Haven Flaws</div><div class="table-row"><div class="flexblock-left"><table class="table-free defectosrefugio_tabla" name="data.attributes.defectosrefugio_tabla" value="{{data.attributes.defectosrefugio_tabla.value}}" attid="A2S6jn54TmEOhQTj"><thead><tr><th class="label-large">Item</th><th class="input-min">Score</th><th class="cell-empty"></th></tr></thead><tbody class="table" id="A2S6jn54TmEOhQTj"></tbody></table></div></div>{{/ifGreater}}</div></div><div class="new-block" id="refugiodominio_tabrow5"><div class="col-1-1"><div class="panelheader-t">Domain</div><div class="new-row"><div class="flexblock-center"><h3 class="centertext label-med" id="nombrelugar" attid="kxDq4Y9WbsM4MWUr">Name:</h3><input name="data.attributes.nombrelugar.value" value="{{data.attributes.nombrelugar.value}}" type="text" class="input-med nombrelugar" attid="kxDq4Y9WbsM4MWUr"><h3 class="centertext label-med" id="localizacion" attid="NjZULhnqmqi1L0by">Location:</h3><input name="data.attributes.localizacion.value" value="{{data.attributes.localizacion.value}}" type="text" class="input-med localizacion" attid="NjZULhnqmqi1L0by"><h3 class="centertext label-med" id="secta_dominio" attid="3QS5oySJD3xgEjk4">Sect/Group:</h3><input name="data.attributes.secta_dominio.value" value="{{data.attributes.secta_dominio.value}}" type="text" class="input-med secta_dominio" attid="3QS5oySJD3xgEjk4"></div><div class="flexblock-center"><h3 class="centertext label-free" id="chasse" attid="nXyiKjs4kBohKM3c">Chasse</h3><div class="radio-input chasse" name="chasse" attid="nXyiKjs4kBohKM3c"></div><h3 class="centertext label-free" id="lien" attid="2Vi7RZnd6r4Dr9qZ">Lien</h3><div class="radio-input lien" name="lien" attid="2Vi7RZnd6r4Dr9qZ"></div><h3 class="centertext label-free" id="portillon" attid="6y8BW5OxwxqYvUiL">Portillon</h3><div class="radio-input portillon" name="portillon" attid="6y8BW5OxwxqYvUiL"></div></div></div></div></div><div class="new-block" id="refugiodominio_tabrow6"><div class="col-1-1"><div class="panelheader-t">Additional Info</div><div class="new-row"><div class="flexblock-center"><textarea class="texteditor-med infoadicionaldominio" name="data.attributes.infoadicionaldominio.value" attid="p2bvPq8HbmMjan4k">{{data.attributes.infoadicionaldominio.value}}</textarea></div></div></div></div></div></div></section>
+</form>

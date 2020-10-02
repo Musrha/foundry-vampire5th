@@ -1,0 +1,166 @@
+@font-face {
+    font-family: CormorantGaramond;
+    src:url(fonts/CormorantGaramond-Regular.otf);
+}
+
+@font-face {
+	font-family: CormorantGaramond-SemiBold;
+	src:url(fonts/CormorantGaramond-SemiBold.otf);
+}
+
+a#tab-prev {
+    color: #790914;
+}
+a#tab-next {
+    color: #790914;
+}
+
+
+
+.sandbox.sheet .window-content {
+	background: url(img/bg.png) no-repeat;
+    background-size: cover;
+}
+
+input[type="text"] {
+  border: 1px solid #790914;
+  border-radius: 3px;
+  color: #790914;
+  background-color: #CCCCCC00;
+}
+
+select {
+	border: 1px solid #790914;
+	color: #790914;
+	background: #CCCCCC00;
+	border-radius: 30px;
+}
+
+.sandbox.sheet .flexblock-center input[type=text].input-small.resonancia {
+	background-color: #00000000
+}
+
+.sandbox.sheet .radio-input {
+	color: #790914;
+}
+
+.sandbox.sheet table.table-free.tabla_poderes {
+	transform: scale(0.94);
+    position: relative;
+    top: -4px;
+}
+
+.sandbox.sheet .tabs .item {
+	color: #790914;
+}
+
+.sandbox.sheet .label-free {
+    font-size:14px;
+	font-family: CormorantGaramond;
+}
+
+.sandbox.sheet .label-med {
+    padding: 1px 5px;
+    font-size:15px;
+	font-family: CormorantGaramond;
+
+}
+
+.sandbox.sheet .label-medlarge {
+    font-size:14px;
+	font-family: CormorantGaramond;
+}
+
+.sandbox.sheet .panelheader {
+    background-color: #790914;
+    font-family: CormorantGaramond;
+	border-radius: 30px;
+}
+
+.sandbox.sheet .panelheader-t {
+	color: #790914;
+	text-shadow: 1px 1px #00000052;
+}
+
+.sandbox.sheet .flexblock-left input{
+    background-color:#CCCCCC00;
+}
+
+.sandbox.sheet .flexblock-center input{
+    border: 1px solid #790914;
+    border-radius: 30px;
+    background-color:#CCCCCC00;
+}
+
+.sandbox.sheet .flexblock-left input[type=text].input-min{
+	border-radius: 30px;
+}
+
+.sandbox.sheet .flexblock-center input[type=text].input-small{
+	background-color: #dedede;
+}
+
+.sandbox.sheet .boldtext {
+	color: #000000
+}
+
+.sandbox.sheet .linkable:hover{
+    color: #790914;
+}
+
+.sandbox.sheet table{
+	width:-webkit-fill-available;
+}
+
+.sandbox.sheet table.table-free{
+    width:-webkit-fill-available;
+}
+
+.sandbox.sheet td{
+    font-family: CormorantGaramond;
+	background: #EDEDED;
+	border: solid 1px #790914;
+    text-align: center;
+	box-shadow: 1px 0px 5px 0px #790914bd;
+}
+
+.sandbox.sheet th{
+	background: #990914;
+}
+
+.sandbox.sheet th.input-med {
+	font-family: CormorantGaramond-SemiBold;
+}
+
+.sandbox.sheet th.input-free {
+    text-align: center;
+	font-family: CormorantGaramond-SemiBold;
+}
+
+.sandbox.sheet th.input-min {
+	font-family: CormorantGaramond-SemiBold;
+}
+
+.sandbox.sheet input.table-small{
+	background-color: #dedede;
+}
+
+/* Navigation Tabs */
+.sandbox.sheet .atabs {
+    border-top: 1px solid #7909143d;
+    border-bottom: 2px solid #790914;
+}
+
+.sandbox.sheet input.table-input {
+	border: none;
+	border-radius: 0px 0px 0px 0px;
+}
+
+.dc-input input {
+	border: none;
+	color: black;
+}
+
+.fa-times-circle:before {
+    content: "\f146";
+}
