@@ -6,7 +6,7 @@ Sheet and system of **Vampire: The Masquerade 5th (Fifth Edition)** using [Sandb
 
 Inside the Journal you'll find a **Readme** where you'll find a guide about how to correctly use the sheet and also the credits.
 
-I recommend that you install this with the [world.json](https://raw.githubusercontent.com/Musrha/foundry-vampirov5/master/world.json) link in **Game Worlds** and putting the url in *Manifest Url*.
+I recommend that you install this with the [world.json](https://raw.githubusercontent.com/Musrha/foundry-vampire5th/master/world.json) link in **Game Worlds** and putting the url in *Manifest Url*.
 
 Hope you enjoy this! You can contact me in [Twitter](https://twitter.com/Musrha) and Discord (**Musrha#8789**) if you find any bugs or have some suggestion.
 
