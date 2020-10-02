@@ -15,7 +15,7 @@
   "socket": false,
   "url": "https://github.com/Musrha/foundry-vampire5th",
   "manifest": "https://raw.githubusercontent.com/Musrha/foundry-vampire5th/main/world.json",
-  "download": "https://github.com/Musrha/foundry-vampire5th/archive/master.zip",
+  "download": "https://github.com/Musrha/foundry-vampire5th/archive/main.zip",
   "license": "",
   "readme": "",
   "bugs": "",
@@ -27,4 +27,5 @@
   "nextSession": "",
   "availability": 0,
   "unavailable": false
+  "id": "vampire5th"
 }
