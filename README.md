@@ -1,4 +1,5 @@
 # Vampire 5th
+[![foundry-shield-077]][foundry-url] [![sandbox-shield-050]][sandbox-url]
 
 <a href='https://ko-fi.com/musrha' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://cdn.ko-fi.com/cdn/kofi2.png?v=2' border='0' alt='¡Apóyame en Ko-Fi!' /><a href='https://paypal.me/musrha' target='_blank'><img height='36' style='border:0px;height:36px;' src='http://www.pngmart.com/files/7/PayPal-Donate-Button-PNG-Transparent-Image.png' border='0' alt='¡Apóyame en Ko-Fi!' /></a>
 
@@ -19,3 +20,8 @@ Hope you enjoy this! You can contact me in [Twitter](https://twitter.com/Musrha)
 - [ ] Differenciate Aggravate Damage and Superficial (not possible in Sandbox right now)
 - [ ] Mark Stains in Humanity (not possible in Sandbox right now)
 -  And lots more when Sandbox gets more upgrades!
+
+[foundry-shield-077]: https://img.shields.io/badge/Foundry-0.7.7-informational
+[sandbox-shield-050]: https://img.shields.io/badge/Sandbox-0.5.0-informational
+[sandbox-url]: https://gitlab.com/rolnl/sandbox-system-builder/-/tree/master
+[foundry-url]: https://foundryvtt.com
