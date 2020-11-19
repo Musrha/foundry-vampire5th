@@ -1,2 +1,7 @@
+{"key":"core.time","value":"0","_id":"Gs5OS2KWgx1KBwTs"}
+{"key":"sandbox.showSimpleRoller","value":"false","_id":"HnrXlUQ6WPbptwLC"}
 {"key":"sandbox.customStyle","value":"\"worlds\\\\vampire5th\\\\styles\\\\vampirov5.css\"","_id":"JGODdxRtV4M3xZTX"}
+{"_id":"Q0SuVJuszYGRed6O","key":"sandbox.diff","value":"\"3\""}
+{"key":"sandbox.showADV","value":"false","_id":"WCXv2W75yW40RRxK"}
+{"_id":"WWkPKu1i3NQwfFMO","key":"core.moduleConfiguration","value":"{\"conjuroscelie\":false,\"dice-so-nice\":true,\"multilevel-tokens\":false,\"parallaxia\":false,\"vampire5th-dice-roller\":true}"}
 {"key":"core.permissions","value":"{\"BROADCAST_AUDIO\":[2,3,4],\"BROADCAST_VIDEO\":[2,3,4],\"ACTOR_CREATE\":[3,4],\"DRAWING_CREATE\":[2,3,4],\"ITEM_CREATE\":[3,4],\"FILES_BROWSE\":[2,3,4],\"FILES_UPLOAD\":[3,4],\"JOURNAL_CREATE\":[2,3,4],\"MACRO_SCRIPT\":[1,2,3,4],\"MESSAGE_WHISPER\":[1,2,3,4],\"SETTINGS_MODIFY\":[3,4],\"SHOW_CURSOR\":[1,2,3,4],\"SHOW_RULER\":[1,2,3,4],\"TEMPLATE_CREATE\":[1,2,3,4],\"TOKEN_CREATE\":[3,4],\"TOKEN_CONFIGURE\":[2,3,4],\"WALL_DOORS\":[1,2,3,4]}","_id":"vQ0bh72yOQGQG3QC"}

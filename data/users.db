@@ -1,1 +1,1 @@
-{"name":"Gamemaster","flags":{},"role":4,"permissions":{},"color":"#cc28c0","hotbar":{},"_id":"Atm6VyCIPQrWhNam"}
+{"_id":"Atm6VyCIPQrWhNam","name":"Gamemaster","flags":{"dice-so-nice":{"appearance":{"labelColor":"#FFFFFF","diceColor":"#cc28c0","outlineColor":"#cc28c0","edgeColor":"#cc28c0","texture":"none","material":"auto","font":"auto","colorset":"custom","system":"vampire5thB"}}},"role":4,"permissions":{},"color":"#cc28c0","hotbar":{}}
